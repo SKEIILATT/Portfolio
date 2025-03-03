@@ -19,6 +19,7 @@ nav{
     margin: 10px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid rgb(214, 213, 213);
 
 }
 ul{
@@ -28,18 +29,21 @@ ul{
 }
 a{
     text-decoration: none;
+    color: black ;
+    
 }
 .li-nav{
     color: black;
 }
-.button-contact{
+.button-contact, .botones-f1, .botones-f2,.botones-tec{
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     background-color: white;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     border-color: rgb(232, 228, 228) ;
     border-style: solid;
+    cursor: pointer;
 }
 #barra-port{
     color:#0d82f6;
@@ -56,9 +60,112 @@ a:hover{
     Sección de Presentación
 */
 #presentacion{
-    background-color: rgb(250, 244, 244);
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+#name{
+    color: #0d82f6;
+}
+#informacion-present{
+    padding: 10px;
+}
+#texto-presentacion{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: gray;
+    font-weight: 400;
+    margin-right: 3rem;
 }
 
+.botones-fila1, .botones-fila2{
+    margin: 10px 0 10px 0;
+}
+.botones-f1:first-child{
+    background-color: #0d82f6;
+    color: white;
+}
+.botones-f2{
+    background-color: transparent;
+    border: none;
+}
+.img-redes, .img-b{
+    width: 30px;
+    height: auto;
+    gap: 20px;
+}
+#img-me{
+    width: 20rem;
+    height: auto;
+    border-radius: 100%;
+    padding: 100px;
+}
+/*  
+    Sección de Proyectos
+*/
 
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.descripcion_p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+#parrafo-p{
+    color: gray;
+    font-size: 20px;
+}
+.card-proyectos{
+    display: flex;
+    flex-wrap: inherit;
+    margin-right: 100px;
+}
+.img-proyectos{
+    width: 600;
+    height: 300px;
+}
+.card-p{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgb(226, 222, 222);
+    margin: 10px 20px 0 50px;
+    
+}
+#tecnologias{
+    display: flex;
+    gap: 10px;
+}
+.nombre-tec{
+    background-color: rgb(212, 207, 207);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 5px 10px 5px 10px;
+}
+.text-proyecto{
+    color: gray;
+}
+.div-botones-tec{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.informacion-p,#tecnologias,.div-botones-tec{
+    padding: 20px;
+}
+.botones-tec:nth-child(2){
+    background-color: #0d82f6;
+}
+.demo-a{
+    color: white;
+}
 
 

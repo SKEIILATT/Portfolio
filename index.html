@@ -20,67 +20,87 @@
             <button class="button-contact"> Contáctame </button>
         </nav>
     </header>
+
     <section id="presentacion">
-        <h1>Hola, soy Javier Gutiérrez</h1>
-        <p>Desarrollador FullStack creando experiencias digitales excepcionales</p>
-        <button>Contáctame</button>
-        <button>Ver Proyectos</button>
-        <button>
-            <a href="https://github.com/SKEIILATT">
-                <img src="https://twenty-icons.com/github.com" alt="">
-            </a>
-        </button>
-        <button>
-            <a href="https://www.linkedin.com/in/javaguti/">
-                <img src="https://twenty-icons.com/linkedin.com" alt="">
-            </a>
-        </button>
-        <button>
-            <a href="mailto:javimacias619@gmail.com">
-                <img src="https://twenty-icons.com/gmail.com" alt="">
-            </a>
-        </button>
-        <img src="img/perfil.jpg" alt="profile-img">
+        <div id="informacion-present">
+            <h1>Hola, soy <span id="name">Javier</span></h1>
+            <p id="texto-presentacion">Desarrollador Full Stack en formación. Apasionado por el aprendizaje estructurado y la innovación digital.</p>
+            <div class="botones-presentacion">
+                <div class="botones-fila1">
+                    <button class="botones-f1">Contáctame</button>
+                    <button class="botones-f1">Ver Proyectos</button>
+                </div>
+                <div class="botones-fila2">
+                    <button class="botones-f2"><a class="enlaces-redes" href="https://github.com/SKEIILATT">
+                        <img class="img-redes" src="img/social.png" alt="logo-github"></a>
+                    </button>
+                    <button class="botones-f2"><a class="enlaces-redes" href="https://www.linkedin.com/in/javaguti/">
+                        <img class="img-redes" src="img/linkedin.png" alt="logo-linkedin"></a>
+                    </button>
+                    <button class="botones-f2"><a class="enlaces-redes" href="mailto:javimacias619@gmail.com">
+                        <img class="img-redes" src="img/mail.png" alt="logo-correo"></a>
+                    </button>  
+                </div>
+            </div>
+        </div>
+        <div>
+            <img id="img-me" src="img/perfil.jpg" alt="profile-img" >
+        </div>
     </section>
+
     <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <p>Una selección de mis trabajos más recientes y destacados</p>
-        <div class="card-proyectos">
-            <img src="" alt="">
-            <h2>Unit Converter</h2>
-            <p>Conversor de unidades para estudiantes que necesitan una herramienta útil para sus trabajos universitarios.</p>
-            <div id="tecnologias">
-                <p>JavaScript</p>
-                <p>Html</p>
-                <p>CSS</p>
-            </div>
-            <button>
-                <a href="https://github.com/SKEIILATT/Unit_Converter">
-                    <img src="https://twenty-icons.com/github.com" alt="">
-                Código</a>
-            </button>
-            <button>
-                <a href="https://skeiilatt.github.io/Unit_Converter/">
-                Demo</a> 
-            </button>
+        <div class="descripcion_p">
+            <h2 id="titulo-proyecto">Proyectos Destacados</h2>
+            <p id="parrafo-p">Una selección de mis trabajos más recientes y destacados</p>
         </div>
         <div class="card-proyectos">
-            <img src="" alt="">
-            <h2>Dashboard Business</h2>
-            <p>Proyecto que utiliza Pandas para leer datos desde MySQL y generar informes de ventas, productividad y clientes. Los reportes se exportan en formatos CSV o Excel y se visualizan mediante gráficos con matplotlib.</p>
-            <div id="tecnologias">
-                <p>Python</p>
-                <p>Matplotlib</p>
-                <p>Pandas</p>
-                <p>MySQL</p>
-                <p>Tkinter</p>
+            <div class="card-p">
+                <div>
+                    <img src="img/p1.jpg" class="img-proyectos" alt="proyecto-1" width="600px">
+                </div>
+                <div class="informacion-p">
+                    <h3>Unit Converter</h3>
+                    <p class="text-proyecto">Conversor de unidades para estudiantes que necesitan una herramienta útil para sus trabajos universitarios.</p>
+                </div>
+                <div id="tecnologias">
+                    <p class="nombre-tec">JavaScript</p>
+                    <p class="nombre-tec">Html</p>
+                    <p class="nombre-tec">CSS</p>
+                </div>
+                <div class="div-botones-tec">
+                    <button class="botones-tec">
+                        <a href="https://github.com/SKEIILATT/Unit_Converter">
+                        <img class="img-b" src="img/social.png" alt="">Código</a>
+                    </button>
+                    <button class="botones-tec">
+                        <a class="demo-a" href="https://skeiilatt.github.io/Unit_Converter/">Demo</a> 
+                    </button>
+                </div>
             </div>
-            <button>
-                <a href="https://github.com/SKEIILATT/Dashboard_Business">
-                    <img src="https://twenty-icons.com/github.com" alt="">
-                Código</a>
-            </button>
+            <div class="card-p">
+                <div>
+                    <img src="img/p2.jpg"class="img-proyectos" alt="proyecto-2">
+                </div>
+                <div class="informacion-p">
+                    <h3>Dashboard Business</h3>
+                    <p class="text-proyecto">Proyecto que utiliza Pandas para leer datos desde MySQL y generar informes de ventas, productividad y clientes.</p>
+                </div>
+                <div id="tecnologias">
+                    <p class="nombre-tec">Python</p>
+                    <p class="nombre-tec">Matplotlib</p>
+                    <p class="nombre-tec">Pandas</p>
+                    <p class="nombre-tec">MySQL</p>
+                    <p class="nombre-tec">Tkinter</p>
+                </div>
+                <div class="div-botones-tec">
+                    <button class="botones-tec">
+                        <a href="https://github.com/SKEIILATT/Dashboard_Business">
+                        <img class="img-b" src="img/social.png" alt="">Código</a>
+                    </button>
+                </div>
+            </div>
         </div>
+
     <section id="habilidades">
         <h2>Mis Habilidades</h2>
         <p>Tecnologías y herramientas con las que trabajo</p>
