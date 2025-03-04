@@ -16,7 +16,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 0 10px ;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid rgb(214, 213, 213);
@@ -62,7 +62,7 @@ a:hover{
 #presentacion{
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(252, 249, 249);
     align-items: center;
     justify-content: space-between;
     padding: 5px;
@@ -116,12 +116,14 @@ h2{
     font-size: 40px;
 }
 
-.descripcion_p{
+.descripcion_p,.info-habilidades,.titulos-form{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 20px 0 0 0 ;
 }
-#parrafo-p{
+#parrafo-p, #parrafo-habilidades,#parrafo-form{
     color: gray;
     font-size: 20px;
 }
@@ -167,5 +169,133 @@ h2{
 .demo-a{
     color: white;
 }
+
+/*
+    Sección de Tecnologías
+*/
+#habilidades{
+    background-color: rgb(252, 249, 249);
+}
+.titulo-tecnologias{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.contenedor-imagenes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagenes-tecnologias{
+    width: 100px;
+    height: auto;
+}
+figcaption{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/*
+    Sección de sobre mi
+*/
+
+#sobreMi{
+    display: flex;
+    gap: 50px;
+}
+#descargar_cv{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d82f6;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(255, 253, 253) ;
+    border-style: solid;
+    cursor: pointer;
+}
+#info-sobre-mi{
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin-bottom: 10px;
+    
+}
+#sub-info{
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.img-profile2{
+    padding: 100px;
+}
+#img-sobre-mi{
+    width: 400px;
+    height: auto;
+    border: 2px solid rgb(229, 228, 228);
+    border-radius: 20px;
+}
+#information{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+/*
+    Sección Contacto
+*/
+#form-contacto{
+    background-color: rgb(252, 249, 249);
+    padding: 10px 0 0 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+label{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+.input-form{
+    padding: 10px 100px 10px 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+.input-form-message{
+    display: flex;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d82f6;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(251, 246, 246) ;
+    color: white;
+    border-style: solid;
+    cursor: pointer;
+    margin-bottom: 20px ;
+
+}
+
+/*
+    Sección de Tecnologías
+*/
+footer{
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid rgb(214, 213, 213);
+    padding: 20px;
+}
+
+
+
 
 
