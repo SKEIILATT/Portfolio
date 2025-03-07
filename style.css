@@ -88,10 +88,6 @@ h1{
 .botones-fila1, .botones-fila2{
     margin: 10px 0 10px 0;
 }
-.botones-f1:first-child{
-    background-color: #0d82f6;
-    color: white;
-}
 .botones-f2{
     background-color: transparent;
     border: none;
@@ -265,13 +261,13 @@ label{
     display: block;
     font-family: 'Poppins', sans-serif;
 }
-.input-form{
+#input-form-nombre,#input-form-asunto,#input-form-mensaje{
     padding: 10px 100px 10px 5px;
     border: 1px solid gray;
     border-radius: 10px;
 
 }
-.input-form-message{
+#input-form-message{
     display: flex;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
@@ -355,9 +351,6 @@ footer{
     .img-profile2,#titulo-sobre-mi,#sub-info{
         text-align: center;
     }
-
-
-
 }
 
 
