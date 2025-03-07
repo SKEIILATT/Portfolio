@@ -20,7 +20,8 @@ nav{
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid rgb(214, 213, 213);
-
+    width: auto;
+    height: auto;
 }
 ul{
     display: flex;
@@ -29,8 +30,7 @@ ul{
 }
 a{
     text-decoration: none;
-    color: black ;
-    
+    color: black ;  
 }
 .li-nav{
     color: black;
@@ -133,7 +133,7 @@ h2{
     margin-right: 100px;
 }
 .img-proyectos{
-    width: 600;
+    width: 600px;
     height: 300px;
 }
 .card-p{
@@ -144,6 +144,7 @@ h2{
 }
 #tecnologias{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .nombre-tec{
@@ -286,13 +287,77 @@ label{
 }
 
 /*
-    Sección de Tecnologías
+    Sección de footer
 */
 footer{
     color: gray;
     font-family: 'Poppins', sans-serif;
     border-top: 1px solid rgb(214, 213, 213);
     padding: 20px;
+}
+
+/*
+    Media Queries
+*/
+@media screen and (max-width:768px) {
+
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        padding: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-contact{
+        display: none;
+    }
+    h1{
+        font-size: 40px;
+        text-align: justify;
+    }
+    #img-me{
+        padding: 0;
+        width: 45vw;
+        height: 45vh;
+    }
+    #presentacion{
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+    .card-proyectos{
+        flex-direction: column;
+        width: 70vw;
+        height: auto;
+        padding-left: 60px;
+    
+    }
+    .img-proyectos{
+        width: 70vw;
+        height: 35vh;
+    }
+    .card-p{
+        margin: 0 0 10px 0;
+    }
+    .img-profile2{
+        padding: 0;
+    }
+    #sobreMi{
+        display: block;
+    }
+    #img-sobre-mi{
+        width: 60vw;
+        height: auto;
+        margin-top: 50px;
+    }
+    .img-profile2,#titulo-sobre-mi,#sub-info{
+        text-align: center;
+    }
+
+
+
 }
 
 
